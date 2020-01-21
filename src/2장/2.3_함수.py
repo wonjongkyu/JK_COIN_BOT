@@ -71,6 +71,37 @@ def 별찍기():
 
 별찍기()
 
+""" 2.3.3 함수 호출 이해하기 """
+def mysum(a, b):
+    ret = a + b
+    return ret
+
+ret = mysum(3, 4)
+print(ret)
+print()
+
+""" 2.3.4 연습 문제 """
+def mygob(a, b):
+    ret = a * b
+    return ret
+print()
+
+def convert_ticker(ticker):
+    ret = ticker.upper()
+    return ret
+ret = convert_ticker('btc')
+print(ret)
+print()
+
+def pickup_event(numbers):
+    ret = []
+    for num in numbers:
+        if num % 2 == 0:
+            ret.append(num)
+    return ret
+
+ret = pickup_event([1,2,3,4,5,6,7,8,9])
+print(ret)
 
 
 
