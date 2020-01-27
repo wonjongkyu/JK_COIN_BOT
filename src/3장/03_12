@@ -1,0 +1,7 @@
+import sys
+from PyQt5.QtWidgets import *
+
+app = QApplication(sys.argv)    # QApplication 객체 생성
+label = QLabel("Hello")
+label.show()
+app.exec_()                     # 이벤타 루프 생성
